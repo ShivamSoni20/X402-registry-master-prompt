@@ -7,9 +7,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const dbPath = path.join(__dirname, 'registry.db');
-const db = new Database(dbPath);
+const isVercel = process.env.VERCEL === '1';
+const db = isVercel ? new Database(':memory:') : new Database(dbPath);
 
-db.pragma('journal_mode = WAL');
+if (!isVercel) {
+  db.pragma('journal_mode = WAL');
+}
 db.pragma('foreign_keys = ON');
 
 // ─── Schema ────────────────────────────────────────────────────────────────────

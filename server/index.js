@@ -334,8 +334,12 @@ app.get('/api/categories', (req, res) => {
 
 // ─── Start Server ───────────────────────────────────────────────────────────────
 
-app.listen(PORT, () => {
-  console.log(`\n🚀 x402 Registry API running at http://localhost:${PORT}`);
-  console.log(`📊 Dashboard stats: http://localhost:${PORT}/api/stats`);
-  console.log(`🔍 Services list:   http://localhost:${PORT}/api/services\n`);
-});
+if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`\n🚀 Vortex402 API running at http://localhost:${PORT}`);
+    console.log(`📊 Dashboard stats: http://localhost:${PORT}/api/stats`);
+    console.log(`🔍 Services list:   http://localhost:${PORT}/api/services\n`);
+  });
+}
+
+export default app;

@@ -4,7 +4,7 @@
 
 The x402 Universal Service Registry is a decentralized, coordinate discovery layer for autonomous agents. It provides a staked, slashable registry where providers list API capabilities, and agents discover/pay via x402 micropayments.
 
-![Landing Page](/src/assets/preview.png)
+![Landing Page](src/assets/preview.png)
 
 ---
 

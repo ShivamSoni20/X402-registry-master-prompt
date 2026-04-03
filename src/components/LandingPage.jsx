@@ -249,7 +249,7 @@ export default function LandingPage() {
         </div>
 
         <div style={{ marginLeft: "auto", display: "flex", gap: { xs: "5px", sm: "10px" }, alignItems: "center" }}>
-          <a href="https://github.com" target="_blank" rel="noopener"
+          <a href="https://github.com/ShivamSoni20/X402-registry-master-prompt" target="_blank" rel="noopener"
             className="desktop-only"
             style={{ fontSize: "12px", color: "#6b6b7e", textDecoration: "none",
               padding: "6px 10px", borderRadius: "6px", border: "1px solid #2a2a35",
@@ -316,7 +316,7 @@ export default function LandingPage() {
         <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
           <button onClick={() => navigate("/dashboard")} style={{
             padding: "14px 32px", borderRadius: "10px",
-            background: "#6366f1", border: "none",
+            background: "#6366f1", border: "none", width: "190px",
             color: "#fff", fontSize: "15px", fontWeight: 600,
             cursor: "pointer", transition: "all 0.15s",
             boxShadow: "0 4px 20px rgba(99,102,241,0.25)"
@@ -329,7 +329,7 @@ export default function LandingPage() {
           <button onClick={() => navigate("/register")} style={{
             padding: "14px 32px", borderRadius: "10px",
             background: "rgba(255,255,255,0.04)",
-            border: "1px solid #2a2a35",
+            border: "1px solid #2a2a35", width: "190px",
             color: "#8b8b9e", fontSize: "15px", fontWeight: 500,
             cursor: "pointer", transition: "all 0.15s"
           }}
@@ -492,7 +492,7 @@ const { result, payment } = await agentWallet.call({
         </p>
         <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
           <button onClick={() => navigate("/register")} style={{
-            padding: "16px 40px", borderRadius: "12px",
+            padding: "16px 40px", borderRadius: "12px", width: "230px",
             background: "#6366f1", border: "none",
             color: "#fff", fontSize: "16px", fontWeight: 600,
             cursor: "pointer", boxShadow: "0 8px 30px rgba(99,102,241,0.3)"
@@ -500,7 +500,7 @@ const { result, payment } = await agentWallet.call({
             Become a Provider
           </button>
           <button onClick={() => navigate("/discover")} style={{
-            padding: "16px 40px", borderRadius: "12px",
+            padding: "16px 40px", borderRadius: "12px", width: "230px",
             background: "none", border: "1px solid #2a2a35",
             color: "#8b8b9e", fontSize: "16px", fontWeight: 500,
             cursor: "pointer"

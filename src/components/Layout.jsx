@@ -17,7 +17,7 @@ import WalletButton from "./WalletButton";
 import { getWalletAddress, truncateAddress, getWalletBalance, formatUSDC } from '../lib/mockWallet';
 
 const navItems = [
-  { path: '/', label: 'Dashboard', icon: LayoutDashboard },
+  { path: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { path: '/discover', label: 'Discover Services', icon: Search },
   { path: '/register', label: 'Register Service', icon: PlusCircle },
   { path: '/my-services', label: 'My Services', icon: BarChart3 },

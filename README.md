@@ -79,12 +79,12 @@ npm run deploy:sepolia
 ## 🗺️ Architecture Overview
 ```mermaid
 graph TD
-    A[Agent] -->|1. Discover| B[x402 Registry Controller]
-    B -->|2. Get URI/Price| C[Service Provider API]
-    A -->|3. Payment (x402)| D[OWS Policy Engine]
+    A[Agent] -->|1. Discover| B[Registry Indexer]
+    B -->|2. Get URI/Price| C[Service Provider]
+    A -->|3. Payment x402| D[OWS Policy Engine]
     D -->|4. Settle| C
     A -->|5. SLA Violation| B
-    B -->|6. Slashes Stake| E[Registry Smart Contract]
+    B -->|6. Slashes Stake| E[Staking Contract]
 ```
 
 ---
@@ -93,19 +93,19 @@ graph TD
 ```mermaid
 sequenceDiagram
     participant Agent
-    participant Registry as Registry Indexer
-    participant Contract as Staking Contract (Base)
+    participant Registry as Indexer
+    participant Contract as Staking (Base)
     
     Agent->>Registry: 1. Service discovery
-    Registry-->>Agent: Returns provider address + metadata
-    Agent->>Agent: 2. Measures service metrics
+    Registry-->>Agent: Metadata (JSON)
+    Agent->>Agent: 2. Measures metrics
     Note over Agent: Detection: Uptime < 99%
-    Agent->>Contract: 3. challenge(serviceId, actualUptime)
+    Agent->>Contract: 3. challenge(serviceId, uptime)
     Contract->>Contract: 4. Verifies stake is active
-    Contract->>Contract: 5. Executes slashing logic
-    Contract-->>Agent: 6. Settle reward (5%)
-    Contract-->>Registry: 7. Emit ServiceSlashed event
-    Registry->>Registry: 8. Update global scores/rankings
+    Contract->>Contract: 5. Executes slashing
+    Contract-->>Agent: 6. Settle reward 5%
+    Contract-->>Registry: 7. Emit ServiceSlashed
+    Registry->>Registry: 8. Update global scores
 ```
 
 ---
@@ -115,4 +115,4 @@ This project addresses the **Infrastructure Coordination** grant, providing the 
 
 ---
 
-**Built with <3 by Antigravity AI**
+**Built with <3 by shivam**

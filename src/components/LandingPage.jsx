@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import WalletButton from "./WalletButton";
+import { useWallet } from "../hooks/useWallet";
 
 // ─── Animated counter hook ───
 function useCounter(target, duration = 1800) {
@@ -157,6 +158,14 @@ function CodeBlock({ code, label }) {
 // ─── Main Landing Page ───
 export default function LandingPage() {
   const navigate = useNavigate();
+  const { isConnected } = useWallet();
+  
+  useEffect(() => {
+    if (isConnected) {
+      navigate("/dashboard");
+    }
+  }, [isConnected, navigate]);
+
   const servicesCount = useCounter(12);
   const callsCount = useCounter(1247893);
   const volumeValue = useCounter(14382);

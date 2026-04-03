@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import {
   Zap, AlertTriangle, Shield, CheckCircle2, XCircle, Search,
-  Loader2, Check, Clock,
+  Loader2, Check, Clock, X,
 } from 'lucide-react';
 import { getSlashEvents, getServices, submitChallenge } from '../lib/api';
 import { getWalletAddress, truncateAddress, formatUSDC, timeAgo } from '../lib/mockWallet';

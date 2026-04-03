@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Search as SearchIcon, Database, Cpu, Brain, HardDrive, Globe,
-  MessageCircle, ExternalLink, ArrowDownToLine, Zap
+  MessageCircle, ExternalLink, ArrowDownToLine, Zap, Activity, Shield
 } from 'lucide-react';
 import { getServices } from '../lib/api';
 

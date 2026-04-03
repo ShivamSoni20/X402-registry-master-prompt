@@ -4,6 +4,8 @@
 
 The Vortex402 Universal Service Registry is a decentralized, coordinate discovery layer for autonomous agents. It provides a staked, slashable registry where providers list API capabilities, and agents discover/pay via x402 micropayments.
 
+🌐 **[Live Demo: vortex402.vercel.app](https://vortex402.vercel.app/)**
+
 ![Landing Page](src/assets/preview.png)
 
 ---
@@ -48,7 +50,7 @@ The registry logic is fully on-chain.
 ### 2. Installation
 ```bash
 # Clone and install
-git clone https://github.com/shivamsoni20/X402-registry-master-prompt
+git clone https://github.com/ShivamSoni20/Vortex402
 npm install
 ```
 

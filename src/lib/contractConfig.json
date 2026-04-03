@@ -1,0 +1,11 @@
+{
+  "contractAddress": "0xc0a6c9684318264a17b685a347df148D04F165fA",
+  "network": "base-sepolia",
+  "chainId": 84532,
+  "rpcUrl": "https://sepolia.base.org",
+  "explorerUrl": "https://sepolia.basescan.org",
+  "txHash": "0xedf7f15e186afa2e3631e71a1d2ac2884c536129f0b8cc6b3e18cfdedd161757",
+  "blockNumber": 39741281,
+  "deployedAt": "2026-04-03T21:14:09.733Z",
+  "deployer": "0x8eDDa3aEAd699a73d0358038b6aA3d4F6BdC4fDC"
+}

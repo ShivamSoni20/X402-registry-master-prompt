@@ -1,0 +1,2 @@
+export const CONTRACT_ADDRESS = "0xc0a6c9684318264a17b685a347df148D04F165fA";
+export const CHAIN_ID = 84532;

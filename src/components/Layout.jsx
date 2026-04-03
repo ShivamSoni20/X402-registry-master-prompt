@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import {
   LayoutDashboard,
   Search,
@@ -82,8 +82,8 @@ export default function Layout({ children }) {
         )}
         
         {/* Logo */}
-        <div className="px-6 pb-6 border-b border-border">
-          <div className="flex items-center gap-3">
+        <div className="px-6 pb-6 border-b border-border hover:opacity-80 transition-opacity">
+          <Link to="/" className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-lg accent-gradient flex items-center justify-center">
               <Zap className="w-5 h-5 text-white" />
             </div>
@@ -91,7 +91,7 @@ export default function Layout({ children }) {
               <h1 className="text-sm font-bold text-text-primary">Vortex402</h1>
               <p className="text-[10px] text-text-muted font-mono">OWS Hackathon 2026</p>
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* Nav */}
@@ -163,9 +163,9 @@ export default function Layout({ children }) {
           )}
           {/* Logo on mobile */}
           {isMobile && (
-            <span style={{ fontSize: "14px", fontWeight: 500, color: "#f0f0f5", flex: 1 }}>
+            <Link to="/" style={{ fontSize: "14px", fontWeight: 500, color: "#f0f0f5", flex: 1, textDecoration: "none" }}>
               Vortex402
-            </span>
+            </Link>
           )}
           
           <div className="flex items-center gap-3 ml-auto">

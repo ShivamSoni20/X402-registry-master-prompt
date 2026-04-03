@@ -88,7 +88,7 @@ export default function Layout({ children }) {
               <Zap className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h1 className="text-sm font-bold text-text-primary">x402 Registry</h1>
+              <h1 className="text-sm font-bold text-text-primary">Vortex402</h1>
               <p className="text-[10px] text-text-muted font-mono">OWS Hackathon 2026</p>
             </div>
           </div>
@@ -164,7 +164,7 @@ export default function Layout({ children }) {
           {/* Logo on mobile */}
           {isMobile && (
             <span style={{ fontSize: "14px", fontWeight: 500, color: "#f0f0f5", flex: 1 }}>
-              x402 Registry
+              Vortex402
             </span>
           )}
           

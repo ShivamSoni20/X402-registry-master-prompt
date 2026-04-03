@@ -1,15 +1,15 @@
-# ⬡ x402 Universal Service Registry
+# ⬡ Vortex402
 
 **OWS Hackathon 2026 · Grand Prize Entry**
 
-The x402 Universal Service Registry is a decentralized, coordinate discovery layer for autonomous agents. It provides a staked, slashable registry where providers list API capabilities, and agents discover/pay via x402 micropayments.
+The Vortex402 Universal Service Registry is a decentralized, coordinate discovery layer for autonomous agents. It provides a staked, slashable registry where providers list API capabilities, and agents discover/pay via x402 micropayments.
 
 ![Landing Page](src/assets/preview.png)
 
 ---
 
 ## 🚀 Vision
-In the era of autonomous multi-agent systems, agents need a trustless way to discover, evaluate, and transition between service providers without human intervention. The x402 Registry serves as the coordination primitive that makes this possible.
+In the era of autonomous multi-agent systems, agents need a trustless way to discover, evaluate, and transition between service providers without human intervention. The Vortex402 Registry serves as the coordination primitive that makes this possible.
 
 ---
 

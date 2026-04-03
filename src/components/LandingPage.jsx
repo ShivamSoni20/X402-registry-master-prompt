@@ -244,7 +244,7 @@ export default function LandingPage() {
             fontSize: "14px"
           }}>⬡</div>
           <span style={{ fontSize: "14px", fontWeight: 600, letterSpacing: "-0.01em" }}>
-            x402 Registry
+            Vortex402
           </span>
         </div>
 
@@ -487,7 +487,7 @@ const { result, payment } = await agentWallet.call({
           fontSize: "16px", color: "#6b6b7e", maxWidth: "480px",
           margin: "0 auto 40px", lineHeight: 1.7
         }}>
-          The x402 Registry is completely open source and permissionless.
+          The Vortex402 Registry is completely open source and permissionless.
           Deploy your agentic service and start earning USDC today.
         </p>
         <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
@@ -535,7 +535,7 @@ const { result, payment } = await agentWallet.call({
           </a>
         </div>
         <div style={{ fontSize: "12px", fontFamily: "monospace", color: "#2a2a35", textAlign: "center" }}>
-          © 2026 x402 UNIVERSAL REGISTRY · BUILT FOR THE OWS GRAND PRIZE
+          © 2026 VORTEX402 UNIVERSAL REGISTRY · BUILT FOR THE OWS GRAND PRIZE
         </div>
       </footer>
 

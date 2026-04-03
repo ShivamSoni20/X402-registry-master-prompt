@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 async function main() {
-  console.log("\n🚀 Deploying x402 Registry Staking Contract...\n");
+  console.log("\n🚀 Deploying Vortex402 Staking Contract...\n");
 
   const [deployer] = await ethers.getSigners();
   const balance = await ethers.provider.getBalance(deployer.address);

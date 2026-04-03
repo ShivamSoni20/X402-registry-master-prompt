@@ -1,9 +1,9 @@
 {
-  "name": "x402-registry",
+  "name": "vortex402",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "x402 Universal Service Registry — npm for autonomous agent APIs",
+  "description": "Vortex402 — Universal service registry for autonomous agent economies",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server/index.js",

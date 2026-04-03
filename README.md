@@ -74,6 +74,9 @@ npm run deploy:sepolia
 ---
 
 ## 🗺️ Architecture Overview
+---
+
+## 🗺️ Architecture Overview
 ```mermaid
 graph TD
     A[Agent] -->|1. Discover| B[x402 Registry Controller]
@@ -82,6 +85,27 @@ graph TD
     D -->|4. Settle| C
     A -->|5. SLA Violation| B
     B -->|6. Slashes Stake| E[Registry Smart Contract]
+```
+
+---
+
+## 🛠️ Trustless SLA Enforcement
+```mermaid
+sequenceDiagram
+    participant Agent
+    participant Registry as Registry Indexer
+    participant Contract as Staking Contract (Base)
+    
+    Agent->>Registry: 1. Service discovery
+    Registry-->>Agent: Returns provider address + metadata
+    Agent->>Agent: 2. Measures service metrics
+    Note over Agent: Detection: Uptime < 99%
+    Agent->>Contract: 3. challenge(serviceId, actualUptime)
+    Contract->>Contract: 4. Verifies stake is active
+    Contract->>Contract: 5. Executes slashing logic
+    Contract-->>Agent: 6. Settle reward (5%)
+    Contract-->>Registry: 7. Emit ServiceSlashed event
+    Registry->>Registry: 8. Update global scores/rankings
 ```
 
 ---
